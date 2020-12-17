@@ -5,7 +5,7 @@ class Solution:
     def duplicate(self, numbers, duplication):
         # write code here
         for i, val in enumerate(numbers):
-            if i!=val:
+            while i!=val:
                 if numbers[numbers[i]]==val:
                     duplication[0] = val
                     return True
